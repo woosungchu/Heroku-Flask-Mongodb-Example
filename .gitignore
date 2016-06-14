@@ -1,0 +1,9 @@
+#config
+*.pyc
+__pycache__
+
+#env
+myvenv
+env
+
+#db
