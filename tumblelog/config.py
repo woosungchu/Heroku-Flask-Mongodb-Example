@@ -6,7 +6,6 @@ class Config(object):
 
 class ProductionConfig(Config):
     MONGOLAB_URI="mongodb://woosungchu:cws2cws;@ds017514.mlab.com:17514/heroku_fj7fqx00"
-    PORT = $PORT
 
 class DevelopmentConfig(Config):
     DEBUG = True
