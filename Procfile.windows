@@ -1,1 +1,1 @@
-web: python tumblelog/manage.py runserver
+web: python tumblelog/manage.py runserver 0.0.0.0:5000
