@@ -8,7 +8,7 @@ class ProductionConfig(Config):
     MONGODB_SETTINGS = {
         'db':'my_tumble_log',
         'host':'ds017514.mlab.com/heroku_fj7fqx00',
-        'port':'17514',
+        'port':17514,
         'username':'woosungchu',
         'password':'cws2cws;',
     }
