@@ -9,4 +9,5 @@ manager = Manager(app)
 manager.add_command("runserver", Server(use_debugger = True , use_reloader=True, host='0.0.0.0'))
 
 if __name__ == "__main__":
-    manager.run()
+    port = int(os.environ.get('PORT', 5000))
+    manager.run(host= '0.0.0.0', port=port)
