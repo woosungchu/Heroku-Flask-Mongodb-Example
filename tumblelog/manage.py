@@ -11,5 +11,6 @@ from tumblelog import app
 if __name__ == "__main__":
 #    capture_all_args = True
 #    manager.run()
-    port = int(os.environ.get('$PORT')) or 30133
+#    port = int(os.environ.get('$PORT')) or 30133
+    port = int(os.getenv('$PORT',5000))
     app.run(host='0.0.0.0',port=port)
