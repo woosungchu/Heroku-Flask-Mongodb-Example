@@ -11,4 +11,4 @@ from tumblelog import app
 if __name__ == "__main__":
 #    capture_all_args = True
 #    manager.run()
-    app.run()
+    app.run(host='0.0.0.0')
