@@ -1,1 +1,1 @@
-web: gunicorn tumblelog.wsgi --log-file -
+web: python tumblelog/manage.py runserver 0.0.0.0:$PORT
