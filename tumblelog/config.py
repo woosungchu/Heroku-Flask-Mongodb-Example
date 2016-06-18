@@ -6,7 +6,7 @@ class Config(object):
     SECRET_KEY = "KSFSDFSDFSGKSDJFGKDFGJDFGJDFKGDFJGDFKGJDFKGJ"
     connect(
         'heroku_fj7fqx00',
-        host='mongodb://admin:admin@@ds017514.mlab.com:17514/heroku_fj7fqx00',
+        host='mongodb://admin:admin@ds017514.mlab.com:17514/heroku_fj7fqx00',
         port=17514,
         username='admin',
         password='admin',
