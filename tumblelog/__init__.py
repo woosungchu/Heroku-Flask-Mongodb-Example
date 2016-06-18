@@ -8,7 +8,6 @@ app.config.from_object('config.ProductionConfig')
 #db config.py
 db = MongoEngine(app)
 
-
 if __name__ == '__main__':
     app.run()
     

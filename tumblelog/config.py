@@ -5,9 +5,9 @@ class Config(object):
     TESTING = False
     SECRET_KEY = "KSFSDFSDFSGKSDJFGKDFGJDFGJDFKGDFJGDFKGJDFKGJ"
     connect(
-        'heroku_ntlsnh74',
-        host='mongodb://admin:admin@ds045465.mlab.com:45465/heroku_ntlsnh74',
-        port=45465,
+        'heroku_fj7fqx00',
+        host='mongodb://admin:admin@@ds017514.mlab.com:17514/heroku_fj7fqx00',
+        port=17514,
         username='admin',
         password='admin',
     )
