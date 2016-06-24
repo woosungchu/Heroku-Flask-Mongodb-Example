@@ -7,3 +7,7 @@ myvenv
 env
 
 #db
+
+
+#trash
+.idea/

@@ -2,6 +2,7 @@ import datetime
 from flask import url_for
 from tumblelog import db
 
+
 class Comment(db.EmbeddedDocument):
     created_at = db.DateTimeField(default=datetime.datetime.now, required=True)
     body = db.StringField(verbose_name="Comment", required=True)

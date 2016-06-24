@@ -16,34 +16,34 @@ class ListView(MethodView):
 class DetailView(MethodView):
 
     form = model_form(Comment, exclude=['created_at'])
-    
+
     def get_context(self,slug):
         post = Post.objects.get_or_404(slug=slug)
         form =self.form(request.form)
-    
+
         context = {
-            "post":post,   
+            "post":post,
             "form":form
         }
         return context
 
     def get(self, slug):
-        post = Post.objects.get_or_404(slug=slug)
-        return render_template('posts/detail.html', post=post)
+        context = self.get_context(slug)
+        return render_template('posts/detail.html', **context)
 
     def post(self,slug):
         context = self.get_context(slug)
         form =context.get('form')
-        
+
         if form.validate():
             comment = Comment()
             form.populate_obj(comment)
-            
+
             post = context.get('post')
             post.comments.append(comment)
             post.save()
-            
-            return redirect(url_for('posts.detail'), slug=slug)
+
+            return redirect(url_for('posts.detail', slug=slug))
         return render_template('posts/detail.html', **context)
         
 # Register the urls
